@@ -6,22 +6,24 @@ const Countries = ({ country, showDetails }) => {
     <div>
       <section className="container-fluid">
         <div className="col">
-          <div class="card border-1 border-primary h-100 text-center shadow">
+          <div className="card border-1 border-primary h-100 text-center shadow">
             <img
               src={flags.png}
-              class="card-img-top image-fluid mx-auto p-2"
+              className="card-img-top image-fluid mx-auto p-2"
               alt=""
             />
-            <div class="card-body mb-3">
-              <h3 class="card-title text-imperial fw-bold">{name.common}</h3>
-              <h6 class="card-text text-muted">Capital: {capital}</h6>
-              <h6 class="card-text text-muted">Continents: {continents}</h6>
+            <div className="card-body mb-3">
+              <h3 className="card-title text-imperial fw-bold">
+                {name.common}
+              </h3>
+              <h6 className="card-text text-muted">Capital: {capital}</h6>
+              <h6 className="card-text text-muted">Continents: {continents}</h6>
             </div>
-            <div class="mb-4">
+            <div className="mb-4">
               <div>
                 <button
                   onClick={() => showDetails(country)}
-                  class="btn btn-primary fs-5 fw-bold"
+                  className="btn btn-primary fs-5 fw-bold"
                 >
                   Details
                 </button>

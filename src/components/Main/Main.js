@@ -11,7 +11,9 @@ const Main = () => {
       .then((data) => getCountries(data));
   }, []);
 
-  useEffect(() => {}, [countries]);
+  useEffect(() => {
+    setDetails(details);
+  }, [countries, details]);
 
   const showDetails = (country) => {
     setDetails(country);
